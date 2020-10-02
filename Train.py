@@ -220,8 +220,9 @@ def PostMessage(message):
     webhook_url = "https://hooks.slack.com/services/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"
 	
     slack_data = {
-        'text': message, 
-        'response_type': 'in_channel'
+        message
+#        'text': message, 
+#        'response_type': 'in_channel'
         }
 
     response = requests.post(webhook_url, data=json.dumps(slack_data), headers={'Content-Type': 'application/json'})
