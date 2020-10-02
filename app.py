@@ -21,7 +21,7 @@ def TrainStation():
 
 
 #@app.route("/test", methods=['GET'])
-@app.route('/')
+@app.route('/test')
 def HelloWorld():
     print("hellow world")
     return "Everything OK!"
