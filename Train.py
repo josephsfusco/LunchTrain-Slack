@@ -170,6 +170,7 @@ class TrainWorker(threading.Thread):
         self.TimeRemaining = train.TimeRemaining * 60
 
     def run(self):
+        print("hello run 1")
         while self.TimeRemaining >= 0:
             time.sleep(1)
             self.TimeRemaining -= 1
@@ -188,6 +189,7 @@ class TrainWorker(threading.Thread):
 def Handler(station, user, message):
     message = message.split(' ')
     command = message[0]
+    print(command)
     message = message[1:]
     notFound = "Your train/destination could not be found, please try again"
     if command == "help":
