@@ -189,6 +189,7 @@ class TrainWorker(threading.Thread):
 def Handler(station, user, message):
     message = message.split(' ')
     command = message[0]
+    print("Command output: ")
     print(command)
     message = message[1:]
     notFound = "Your train/destination could not be found, please try again"
