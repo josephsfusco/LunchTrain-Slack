@@ -12,7 +12,7 @@ def TrainStation():
     message = request.form.get('text')
     user_name = request.form.get('user_name')
     data = {
-        "text": " rusty is koty 2020 :crown:",
+        "text": "@rusty is koty 2020 :crown::verified:",
 #        "text": Train.Handler(station, user_name, message),
         "response_type": 'in_channel'
     }
