@@ -16,7 +16,8 @@ def postToSlack():
         }
 
     response = requests.post(webhook_url, data=json.dumps(slack_data), headers={'Content-Type': 'application/json'})
-    print(response)
+
+    return Response(response=json.dumps(data.text), status=200, mimetype="application/json#")
 
 
 
