@@ -12,7 +12,8 @@ def TrainStation():
     message = request.form.get('text')
     user_name = request.form.get('user_name')
     data = {
-        "text": Train.Handler(station, user_name, message),
+        "text": "koty 2020"
+#        "text": Train.Handler(station, user_name, message),
         "response_type": 'in_channel'
     }
     return Response(response=json.dumps(data), status=200, mimetype="application/json")
