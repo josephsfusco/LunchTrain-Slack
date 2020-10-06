@@ -12,6 +12,8 @@ def TrainStation():
     token = request.form.get('token')
     message = request.form.get('text')
     user_name = request.form.get('user_name')
+    user_id = request.form.get('user_id')
+
 
     data = kookify.Handler(token, message, user_name)
     
