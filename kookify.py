@@ -19,7 +19,7 @@ def Handler(token, message, user_name, user_id):
             }
     elif (message == "hi" or message == "hello"):
         response = {
-            "text" : "hi kook",
+            "text" : "hi kook \nhttps://media.giphy.com/media/f5XoT6Bf0Vj8RqEP5p/giphy.gif",
             "response_type" : "in_channel"
         }
     elif (message == "log"):
