@@ -4,7 +4,7 @@ import requests
 import json
 
 
-def Handler(token, message, user_name):
+def Handler(token, message, user_name, user_id):
     if (message == "who is koty?" or message == "who is koty"): 
         response = {
             "text" : "<@U010YCYF3SM> is KOTY :crown: :verified:",
@@ -18,7 +18,7 @@ def Handler(token, message, user_name):
         }
     elif (message == "log"):
         response = {
-            "text" : "message: %s \ntoken: %s \nuser name: %s" % (message, token, user_name),
+            "text" : "message: %s \ntoken: %s \nuser name: %s \nuser id: %s" % (message, token, user_name, user_id),
             "response_type" : "in_channel"
         }
     else: 
