@@ -11,9 +11,14 @@ def Handler(token, message, user_name):
             "user" : "U010YCYF3SM",
             "response_type" : "in_channel"
         }
+    elif (message == "hi" or message == "hello"):
+        response = {
+            "text" : "hi kook",
+            "response_type" : "in_channel"
+        }
     else: 
         response = {
-            "text" : "hello world!",
+            "text" : "all i see is :talking::talking::talking:",
             "response_type" : "in_channel"
         }
     return response 
