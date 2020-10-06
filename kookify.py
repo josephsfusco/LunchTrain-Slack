@@ -16,6 +16,11 @@ def Handler(token, message, user_name):
             "text" : "hi kook",
             "response_type" : "in_channel"
         }
+    elif (message == "log"):
+        response = {
+            "text" : "message: %s \ntoken: %s \nuser name: %s" % (message, token, user_name),
+            "response_type" : "in_channel"
+        }
     else: 
         response = {
             "text" : "all i see is :talking::talking::talking:",
