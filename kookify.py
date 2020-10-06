@@ -7,7 +7,7 @@ import json
 def Handler(token, message, user_name):
     if (message == "who is koty?" or message == "who is koty"): 
         response = {
-            "text" : "<@U010YCYF3SM> is KOTY",
+            "text" : "<@U010YCYF3SM> is KOTY :crown: :verified:",
             "user" : "U010YCYF3SM",
             "response_type" : "in_channel"
         }
