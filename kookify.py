@@ -8,7 +8,7 @@ def Handler(token, message, user_name, user_id):
     if (message == "who is koty?" or message == "who is koty"): 
         if (user_id == "U010YCYF3SM"):
             response = {
-                "text" : "you are :crown:",
+                "text" : "you are :crown: \nhttps://media.giphy.com/media/f5XoT6Bf0Vj8RqEP5p/giphy.gif",
                 "response_type" : "in_channel"
             }
         else: 
@@ -19,7 +19,7 @@ def Handler(token, message, user_name, user_id):
             }
     elif (message == "hi" or message == "hello"):
         response = {
-            "text" : "hi kook \nhttps://media.giphy.com/media/f5XoT6Bf0Vj8RqEP5p/giphy.gif",
+            "text" : "hi kook",
             "response_type" : "in_channel"
         }
     elif (message == "log"):
