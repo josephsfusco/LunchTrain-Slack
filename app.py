@@ -1,6 +1,7 @@
 from flask import Flask, request, Response
 import Train
 import json
+import kookify
 
 app = Flask(__name__)
 station = Train.Station()
@@ -11,11 +12,15 @@ def TrainStation():
     token = request.form.get('token')
     message = request.form.get('text')
     user_name = request.form.get('user_name')
-    data = {
-        "text": message,
+
+    data = kookify.Handler(token, message, user_name)
+    
+#    data = {
+#        "text": "hello world",
 #        "text": Train.Handler(station, user_name, message),
-        "response_type": 'in_channel'
-    }
+#        "response_type": 'in_channel'
+#    }
+
     return Response(response=json.dumps(data), status=200, mimetype="application/json")
 
 
